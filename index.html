@@ -18,7 +18,7 @@ a:focus-visible { outline: 3px solid #075e62; outline-offset: 3px; }
 </head>
 <body><main>
 <h1>ExpiryTrack Pro — Privacy Policy</h1>
-<p>Last updated: 4 October 2026</p>
+<p>Last updated: 5 October 2026</p>
 <p>Provider: <strong>Vikram Shakti Bablee</strong>, developer of <strong>ExpiryTrack Pro</strong></p>
 <p>Contact: <strong>expirytrackerpro@gmail.com</strong></p>
 <p>This policy explains how ExpiryTrack Pro handles information when you use its Android application. ExpiryTrack Pro helps you record stock counts, expiry batches, supermarket Rotation checks and shelf-refill lists.</p>
@@ -29,7 +29,7 @@ a:focus-visible { outline: 3px solid #075e62; outline-offset: 3px; }
 <p>Camera permission is requested for barcode scanning. You may deny or revoke it and enter products manually. Camera frames are processed on the device using Google's bundled ML Kit barcode scanner. The app's scanner does not save photographs or upload camera frames, and ML Kit does not send its input images or recognition output to Google for processing.</p>
 <p>ML Kit does communicate with Google for service maintenance and diagnostic/usage metrics. Google's disclosures describe device and app information, per-installation identifiers, performance and configuration information, feature events and error codes. This is distinct from sending the barcode camera image. See <a href="https://developers.google.com/ml-kit/terms">ML Kit privacy information</a>, <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit Android data disclosures</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 <h2>Public product lookup</h2>
-<p>If a barcode is not found locally, the app may request product information from Open Food Facts over HTTPS. The request contains the barcode; the service also receives ordinary connection information such as an IP address. Camera images, your stock counts and your working database are not included in this lookup request. You can create a product manually if lookup is unavailable or returns no suitable result. See <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy information</a>.</p>
+<p>In the current closed-test build (version 49), external product lookup is disabled. Scanned barcodes are matched against your local catalogues. If no local match is found, you can enter the product manually. This build does not send barcode lookup requests to Open Food Facts. Existing local product records are retained. The external lookup implementation is reserved for a future reviewed release; any change to these data practices will be disclosed before it is enabled.</p>
 <h2>Catalogue imports and report sharing</h2>
 <p>When you select a catalogue document, the app reads that document to import product information. It does not require general access to your contacts, location or entire media library.</p>
 <p>Report images are generated in the app's cache. When you share them, Android provides the chosen receiving app access to those images. A report may include company/store information, quantities, dates and reviewer/signature details. Check the report and recipient before sharing. The receiving service's privacy practices apply, and clearing local data does not recall copies already sent to other people or services. Cached report images can remain until the app's cache is cleared by you or Android.</p>
